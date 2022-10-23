@@ -15,6 +15,7 @@
   <description>Demo project for Spring Boot</description>
   <properties>
     <java.version>1.8</java.version>
+    <start-class>hello.main</start-class>
   </properties>
   <dependencies>
     <dependency>
@@ -27,20 +28,10 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
-    </dependency>
   </dependencies>
 
   <build>
     <plugins>
-
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-
       <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
@@ -51,10 +42,6 @@
             </goals>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>pl.project13.maven</groupId>
-        <artifactId>git-commit-id-plugin</artifactId>
       </plugin>
     </plugins>
     <finalName>devops-integration</finalName>
